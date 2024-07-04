@@ -6,8 +6,8 @@ on:
     paths:
       - pipelines/**
 env:
-  AWS_REGION: us-east-2
-  SAGEMAKER_PROJECT_NAME: sagemaker-github
+  AWS_REGION: eu-west-1
+  SAGEMAKER_PROJECT_NAME: test-maker-2024-07-04-4
 
 jobs:
   Build:
@@ -16,10 +16,10 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
 
-      - name: setup python 3.10
+      - name: setup python 3.11
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10' 
+          python-version: '3.11' 
 
       - name: Install dependencies
         run: |
