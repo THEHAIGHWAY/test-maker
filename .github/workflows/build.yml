@@ -5,6 +5,7 @@ on:
       - main
     paths:
       - pipelines/**
+  workflow_dispatch:
 env:
   AWS_REGION: eu-west-1
   SAGEMAKER_PROJECT_NAME: test-maker-2024-07-04-4
